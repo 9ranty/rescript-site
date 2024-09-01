@@ -1,2 +1,13 @@
-#Start(1725225705750)
-#Done(1725225705952)
+#Start(1725227734268)
+
+  Warning number 3
+  /Users/grant/rescript-site/src/Main.res:1:1-15
+
+  1 │ ReactDOM.render(
+  2 │   React.StrictMode.make({
+  3 │     children: <Index />
+
+  deprecated: ReactDOM.render
+  ReactDOM.render is no longer supported in React 18. Use ReactDOM.Client.createRoot instead.
+
+#Done(1725227734295)

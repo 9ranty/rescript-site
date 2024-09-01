@@ -7,4 +7,12 @@ o Demo.cmi : cp ../bs/src/Demo.cmi
 o Demo.cmj : cp ../bs/src/Demo.cmj
 o Demo.cmt : cp ../bs/src/Demo.cmt
 o Demo.res : cp ../../src/Demo.res
-build install.stamp : touch Demo.cmi Demo.cmj 
+o Main.cmi : cp ../bs/src/Main.cmi
+o Main.cmj : cp ../bs/src/Main.cmj
+o Main.cmt : cp ../bs/src/Main.cmt
+o Main.res : cp ../../src/Main.res
+o Index.cmi : cp ../bs/src/Index.cmi
+o Index.cmj : cp ../bs/src/Index.cmj
+o Index.cmt : cp ../bs/src/Index.cmt
+o Index.res : cp ../../src/Index.res
+build install.stamp : touch Demo.cmi Demo.cmj Main.cmi Main.cmj Index.cmi Index.cmj 

@@ -1,1 +1,1 @@
-{ "dirs" : [ "src" ] , "pkgs" : [] , "generated" : [] }
+{ "dirs" : [ "src" ] , "pkgs" : [ [ "@rescript/react" , "/Users/grant/rescript-site/node_modules/@rescript/react" ] ] , "generated" : [] }
