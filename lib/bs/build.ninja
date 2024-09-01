@@ -1,0 +1,13 @@
+rescript = 1
+rule astj
+  command = /Users/grant/rescript-site/node_modules/rescript/darwinarm64/bsc.exe  -bs-v 11.1.3 -uncurried  -absname -bs-ast -o $out $i
+o src/Demo.ast : astj ../../src/Demo.res
+rule deps
+  command = /Users/grant/rescript-site/node_modules/rescript/darwinarm64/bsb_helper.exe -hash c6750ded0211546f2cf470c10a59daed $in
+  restat = 1
+o src/Demo.d : deps src/Demo.ast
+rule mij
+  command = /Users/grant/rescript-site/node_modules/rescript/darwinarm64/bsc.exe -I src   -uncurried -bs-package-name rescript-site -bs-package-output esmodule:$in_d:.bs.js $i
+  dyndep = 1
+  restat = 1
+o src/Demo.cmj src/Demo.cmi ../../src/Demo.bs.js : mij src/Demo.ast
