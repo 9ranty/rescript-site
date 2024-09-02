@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "rescript && vite build",
     "preview": "vite preview",
-    "deploy": "aws s3 sync dist/ s3://rescript-site --delete && aws cloudfront create-invalidation --distribution-id E3EO4HKZ659Q4U --paths '/*'""
+    "deploy": "aws s3 sync dist/ s3://rescript-site --delete && aws cloudfront create-invalidation --distribution-id E3EO4HKZ659Q4U --paths '/*'"
   },
   "keywords": [],
   "author": "",
