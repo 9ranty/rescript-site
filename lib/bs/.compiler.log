@@ -1,4 +1,4 @@
-#Start(1725227734268)
+#Start(1725305129740)
 
   Warning number 3
   /Users/grant/rescript-site/src/Main.res:1:1-15
@@ -10,4 +10,4 @@
   deprecated: ReactDOM.render
   ReactDOM.render is no longer supported in React 18. Use ReactDOM.Client.createRoot instead.
 
-#Done(1725227734295)
+#Done(1725305129796)
